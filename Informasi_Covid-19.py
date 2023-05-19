@@ -3,8 +3,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 import streamlit.components.v1 as component
-from gsheetsdb import connect
-conn = connect()
+
 
 from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
 from htbuilder.units import percent, px
