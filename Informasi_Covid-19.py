@@ -5,9 +5,6 @@ from PIL import Image
 import streamlit.components.v1 as component
 
 
-from htbuilder import HtmlElement, div, br, hr, a, p, img, styles
-from htbuilder.units import percent, px
-
 
 def image(src_as_string, **style):
     return img(src=src_as_string, style=styles(**style))
