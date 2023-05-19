@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
-from streamlit_option_menu import option_menu
 import streamlit.components.v1 as component
 from gsheetsdb import connect
 conn = connect()
