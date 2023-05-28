@@ -74,43 +74,8 @@ url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sh
 df2023K1=pd.read_csv(url)
 df2023K1.set_index('Bulan', inplace=True)
 
+st.write(df2020K2)
+st.bar_chart(df2020K2)
 
-first_choice = st.selectbox("First level options", ["Pilih Data","2020K2", "2020K3","2020K4", "2021K1", "2021K2", "2021K3", "2021K4", "2022K1", "2022K2", "2022K3", "2022K4", "2023K1"])
-
-    if first_choice == '2020K2':
-        st.write(df2020K2)
-        st.bar_chart(df2020K2)
-
-    elif first_choice == '2020K3':
-        st.write(df2020K3)
-        st.bar_chart(df2020K3)
-
-    elif first_choice == '2020K4':
-        st.write(df2020K4)
-
-    elif first_choice == '2021K1':
-        st.write(df2021K1)
-
-    elif first_choice == '2021K2':
-        st.write(df2021K2)
-
-    elif first_choice == '2021K3':
-        st.write(df2021K3)
-
-    elif first_choice == '2021K4':
-        st.write(df2021K4)
-
-    elif first_choice == '2022K1':
-        st.write(df2022K1)
-
-    elif first_choice == '2022K2':
-        st.write(df2022K2)
-
-    elif first_choice == '2022K3':
-        st.write(df2022K3)
-
-    elif first_choice == '2022K4':
-        st.write(df2022K4)
-     
-    elif first_choice == '2023K1':
-        st.write(df2023K1)
+st.write(df2020K3)
+st.bar_chart(df2020K3)
